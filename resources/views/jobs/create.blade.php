@@ -14,7 +14,7 @@
               <x-form-field>
                 <x-form-label for='title'>Title</x-form-label>
                 <div class="mt-2">
-                  <x-form-input name="title" id="title" placeholder="Shift Leader" required></x-form-input>
+                  <x-form-input name="title" id="title" placeholder="Shift Leader" required :value="old('title')"></x-form-input>
                 </div>
                 <div class="mt-1">
                   <x-form-error name='title'/>
@@ -24,7 +24,7 @@
               <x-form-field>
                 <x-form-label for='salary'>Salary</x-form-label>
                 <div class="mt-2">
-                  <x-form-input name="salary" id="salary" placeholder="$50,000" required></x-form-input>
+                  <x-form-input name="salary" id="salary" placeholder="$50,000" required :value="old('salary')"></x-form-input>
                 </div>
                 <div class="mt-1">
                   <x-form-error name='salary'/>

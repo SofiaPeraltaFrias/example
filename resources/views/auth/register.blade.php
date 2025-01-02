@@ -14,7 +14,7 @@
                 <x-form-field>
                     <x-form-label for='first_name'>First Name</x-form-label>
                     <div class="mt-2">
-                        <x-form-input name="first_name" id="first_name" placeholder="" required></x-form-input>
+                        <x-form-input name="first_name" id="first_name" placeholder="" required :value="old('first_name')"></x-form-input>
                     </div>
                     <div class="mt-1">
                         <x-form-error name='first_name'/>
@@ -24,7 +24,7 @@
                 <x-form-field>
                     <x-form-label for='last_name'>Last Name</x-form-label>
                     <div class="mt-2">
-                        <x-form-input name="last_name" id="last_name" placeholder="" required></x-form-input>
+                        <x-form-input name="last_name" id="last_name" placeholder="" required :value="old('last_name')"></x-form-input>
                     </div>
                     <div class="mt-1">
                         <x-form-error name='last_name'/>
@@ -34,7 +34,7 @@
                 <x-form-field>
                     <x-form-label for='email'>Email</x-form-label>
                     <div class="mt-2">
-                        <x-form-input name="email" id="email" placeholder="" required type='email'></x-form-input>
+                        <x-form-input name="email" id="email" placeholder="" required type='email' :value="old('email')"></x-form-input>
                     </div>
                     <div class="mt-1">
                         <x-form-error name='email'/>
